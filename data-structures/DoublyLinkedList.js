@@ -102,3 +102,20 @@ doublyLL.find(16);
 doublyLL.find(8);
 doublyLL.find(4);
 
+// Output for this file:
+
+// The doubly linked list seems to be empty
+// ************
+// current element:  undefined  -->  2  -->  4
+// current element:  2  -->  4  -->  6
+// current element:  4  -->  6  -->  8
+// current element:  6  -->  8  -->  undefined
+// ************
+// ************
+// current element:  undefined  -->  2  -->  4
+// current element:  2  -->  4  -->  8
+// current element:  4  -->  8  -->  undefined
+// ************
+// No, the value 16 could not be found
+// Yes, the value 8 is present
+// Yes, the value 4 is present
