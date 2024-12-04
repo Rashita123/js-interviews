@@ -39,7 +39,8 @@ getFullNameAndDetail.call(person, "Maharashtra", "India"); // Rashita Mehta from
 Function.prototype.myCall = function(context, ...args){
     // context has person2
     // `this` in this function is the fn to be called with the context - getFullNameAndDetail
-
+    
+    context = context || globalThis;
     // person2.getFullNameAndDetail(...args) this is what we want
     context.myFunc = this;
     context.myFunc(...args);

@@ -17,6 +17,7 @@ getFullNameAndDetails.apply(person, ["Punjab", "India"]); // Rachel Green from P
 // APPLY POLYFILL
 
 Function.prototype.myApply = function(context, argsArray){
+    context = context || globalThis;
     // we want context.getFullNameAndDetails(...argsArray) 
     context.funcToCall = this;
     context.funcToCall(...argsArray);
