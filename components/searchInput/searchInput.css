@@ -1,0 +1,46 @@
+.search-input {
+  width: 24rem;
+  height: 2rem;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  position: relative;
+  outline-color: #504b38;
+}
+.search-input::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+.search-suggestions-box {
+  width: 24rem;
+  margin: auto;
+  border: 1px solid black;
+  margin: 0.5rem auto;
+  max-height: 20rem;
+  overflow-y: scroll;
+  position: relative;
+}
+.loading {
+  position: absolute;
+  background: lightgray;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suggestion {
+  display: block;
+  text-align: left;
+  padding: 0.5rem;
+  will-change: transform, background-color;
+  transition: background-color 0.2s ease;
+}
+.suggestion:hover {
+  background-color: #ebe5c2;
+  cursor: pointer;
+}
+.loading {
+  text-align: left;
+}
